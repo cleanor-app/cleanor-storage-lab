@@ -6,6 +6,7 @@ Reproducible benchmarks and open datasets on **image compression (JPEG / WebP / 
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](data/LICENSE)
 [![Studies](https://img.shields.io/badge/read%20the%20studies-cleanor.app%2Fresearch-0a7cff.svg)](https://cleanor.app/research)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21217372.svg)](https://doi.org/10.5281/zenodo.21217372)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20datasets-cleanorlabs%2Fcleanor--storage--lab-ff9d00.svg)](https://huggingface.co/datasets/cleanorlabs/cleanor-storage-lab)
 
 > 📊 **Human-readable write-ups, with charts and methodology, live at [cleanor.app/research](https://cleanor.app/research).** This repo is the raw data and the harness behind them.
 
