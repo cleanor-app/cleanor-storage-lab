@@ -1,0 +1,28 @@
+{
+  "title": "Storage Lab: Image Compression & Cloud Storage Benchmarks",
+  "id": "INSERT-KAGGLE-USERNAME/storage-lab-image-compression-benchmarks",
+  "subtitle": "Reproducible JPEG/WebP/AVIF/JPEG XL, HEIC-tax and cloud $/GB open datasets",
+  "licenses": [{ "name": "CC-BY-4.0" }],
+  "keywords": [
+    "computer science",
+    "internet",
+    "image data",
+    "image processing",
+    "exploratory data analysis"
+  ],
+  "resources": [
+    { "path": "compression-benchmark.csv", "description": "Per-image JPEG/WebP/AVIF encodes across a quality ladder with SSIM+PSNR vs the lossless master." },
+    { "path": "compression-benchmark-summary.csv", "description": "Mean size/SSIM/PSNR per format+quality and bytes at matched SSIM (0.95/0.98/0.99)." },
+    { "path": "compression-benchmark-hires.csv", "description": "Same benchmark on high-resolution (12 MP) phone photos." },
+    { "path": "nextgen-formats-benchmark.csv", "description": "JPEG/WebP/AVIF/JPEG XL at matched SSIM, plus JXL lossless recompression of a JPEG." },
+    { "path": "heic-tax-benchmark.csv", "description": "HEIC to JPG/PNG conversion sizes with SSIM vs master (the HEIC tax)." },
+    { "path": "heic-tax-summary.csv", "description": "Median size multiplier of converting HEIC to JPG/PNG at matched quality." },
+    { "path": "cloud-price-index.csv", "description": "Cloud storage $/GB/month and 10-year cost across major providers (2026 US list prices)." },
+    { "path": "streaming-data-usage.csv", "description": "MB/hour by streaming service and tier (official + measured)." },
+    { "path": "photo-storage-capacity.csv", "description": "How many HEIC/JPEG/48MP/ProRAW photos fit per iPhone storage tier." },
+    { "path": "passport-photo-specs.csv", "description": "Passport/visa photo specs (mm, head size, background, digital limits) by country." },
+    { "path": "storage-trends-long.csv", "description": "Search demand for storage-cleanup queries by country." },
+    { "path": "storage-trends-monthly.csv", "description": "Monthly search volume for storage-cleanup queries." },
+    { "path": "storage-trends-by-country.csv", "description": "Storage-cleanup search demand pivoted by country and query." }
+  ]
+}
