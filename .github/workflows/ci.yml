@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Syntax-check every benchmark script
+        run: |
+          for f in benchmarks/*.mjs; do
+            echo "checking $f"
+            node --check "$f"
+          done
+
+      - name: Validate published CSV datasets
+        run: |
+          node --input-type=module <<'EOF'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          // quote-aware field count: commas inside "..." do not split
+          const nfields = (line) => {
+            let n = 1, q = false;
+            for (let i = 0; i < line.length; i++) {
+              const c = line[i];
+              if (c === '"') q = !q;
+              else if (c === ',' && !q) n++;
+            }
+            return n;
+          };
+          const dir = 'data';
+          const csvs = fs.readdirSync(dir).filter((f) => f.endsWith('.csv'));
+          if (!csvs.length) { console.error('no CSVs found in data/'); process.exit(1); }
+          let bad = 0;
+          for (const f of csvs) {
+            const lines = fs.readFileSync(path.join(dir, f), 'utf8').trim().split('\n');
+            if (lines.length < 2) { console.error(`✗ ${f}: fewer than 2 rows`); bad++; continue; }
+            const cols = nfields(lines[0]);
+            const ragged = lines.findIndex((l, i) => i > 0 && nfields(l) !== cols);
+            if (ragged > 0) { console.error(`✗ ${f}: row ${ragged + 1} has wrong column count`); bad++; continue; }
+            console.log(`✓ ${f}: ${lines.length - 1} rows × ${cols} cols`);
+          }
+          if (bad) { console.error(`\n${bad} CSV problem(s).`); process.exit(1); }
+          console.log('\nAll CSVs valid.');
+          EOF
