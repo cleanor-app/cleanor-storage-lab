@@ -3,6 +3,7 @@ message: "If you use these datasets, please cite them as below."
 title: "Storage Lab: Open Image-Compression & Cloud-Storage Datasets"
 authors:
   - name: "Cleanor Labs"
+    orcid: "https://orcid.org/0009-0005-4623-961X"
 url: "https://cleanor.app/research"
 repository-code: "https://github.com/cleanor-app/cleanor-storage-lab"
 license: MIT
