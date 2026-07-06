@@ -1,6 +1,6 @@
 {
   "title": "Storage Lab: Image Compression & Cloud Storage Benchmarks",
-  "id": "INSERT-KAGGLE-USERNAME/storage-lab-image-compression-benchmarks",
+  "id": "cleanorlabs/storage-lab-image-compression-benchmarks",
   "subtitle": "Reproducible JPEG/WebP/AVIF/JPEG XL, HEIC-tax and cloud $/GB open datasets",
   "licenses": [{ "name": "CC-BY-4.0" }],
   "keywords": [
