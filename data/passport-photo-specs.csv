@@ -1,0 +1,12 @@
+country,document,width_mm,height_mm,size_inches,head_min_mm,head_max_mm,head_measure,background,glasses,neutral_expression,recency_months,digital_notes,us_monthly_searches,official_source
+United States,Passport,51,51,2x2,25,35,crown-to-chin,plain white or off-white,banned (since 2016),yes,6,"JPG/PNG/HEIC, 54 KB-10 MB, ~600-1200 px",14800,travel.state.gov
+United States,Visa,51,51,2x2,25,35,crown-to-chin (50-69% of frame),plain white or off-white,banned (since 2016),yes,6,"JPEG, 600-1200 px, <=240 KB",2900,travel.state.gov
+United Kingdom,Passport,35,45,,29,34,crown-to-chin,plain cream or light grey,conditional (no glare/tint),yes,1,"min 600x750 px, 50 KB-10 MB",1600,gov.uk
+Schengen Area,Visa,35,45,,32,36,chin-to-crown (70-80% of frame),plain light grey / light,conditional (no glare/tint),yes,6,member-state specific (ICAO),1600,home-affairs.ec.europa.eu
+Canada,Passport,50,70,2x2.75,31,36,chin-to-crown,plain white,conditional (no glare/tint),yes,6,printed photos only,4400,canada.ca
+Australia,Passport,35,45,,32,36,chin-to-crown,plain light-coloured,banned (unless medical),yes,6,printed photos only,720,passports.gov.au
+India,Passport,35,45,,,,face 80-85% of frame,plain white,conditional (no dark/tinted),yes,6,captured on-site at PSK,2400,passportindia.gov.in
+China,Visa,33,48,,28,33,chin-to-crown,white or near-white,conditional (no thick/tinted),yes,6,"JPEG, 354x472-420x560 px, 40-120 KB",2900,visaforchina.cn
+Japan,Passport,35,45,,32,36,crown-to-chin (34 +/-2 mm),no background / white recommended,conditional (no glare),yes,6,online accepted; no fixed px spec,880,mofa.go.jp
+Germany,Passport,35,45,,32,36,chin-to-hairline,uniform bright / light grey,conditional (no glare/tint),yes,6,digital-only since May 2025,720,germany.info
+Ireland,Passport,35,45,38x50 max,,,pose-based (no mm range),plain light grey / white / cream,conditional (no glare/tint),yes,6,"JPEG, min 715x951 px, <=9 MB",880,dfa.ie

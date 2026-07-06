@@ -1,0 +1,37 @@
+category,service,tier,per_hour_mb,per_hour_gb,status
+video,Netflix,Low (Data Saver),300,0.300,official
+video,Netflix,SD,700,0.700,official
+video,Netflix,HD (720-1080p),3000,3.000,official
+video,Netflix,4K (UHD),7000,7.000,official
+video,YouTube,480p,600,0.600,measured
+video,YouTube,720p,1500,1.500,measured
+video,YouTube,1080p,3000,3.000,measured
+video,YouTube,1440p,5000,5.000,measured
+video,YouTube,4K,13000,13.000,measured
+video,Amazon Prime Video,SD (Good),380,0.380,in-app
+video,Amazon Prime Video,HD (Better),1400,1.400,in-app
+video,Amazon Prime Video,4K (Best),6800,6.800,estimate
+video,Disney+,Save Data,600,0.600,reported
+video,Disney+,HD,2000,2.000,reported
+video,Disney+,4K,7700,7.700,reported
+video,Max (HBO),HD,2250,2.250,estimate
+video,Max (HBO),4K,7700,7.700,estimate
+video,TikTok,Default feed,840,0.840,measured
+video,Instagram Reels,Full-screen,1100,1.100,measured
+audio,Spotify,Low,11,0.011,official
+audio,Spotify,Normal,43,0.043,official
+audio,Spotify,High,72,0.072,official
+audio,Spotify,Very High,144,0.144,official
+audio,Spotify,Lossless (FLAC),900,0.900,official-est
+audio,Apple Music,AAC 256,115,0.115,official
+audio,Apple Music,Lossless (ALAC),720,0.720,estimate
+audio,Apple Music,Hi-Res Lossless,2900,2.900,estimate
+audio,YouTube Music,High (256),115,0.115,official-bitrate
+audio,Amazon Music,HD (~850),383,0.383,official-bitrate
+audio,Amazon Music,Ultra HD (~3730),1679,1.679,official-bitrate
+call,Zoom,1:1 720p,1080,1.080,estimate
+call,Zoom,1:1 1080p,1620,1.620,estimate
+call,Zoom,Group HD,2400,2.400,estimate
+call,Zoom,Audio only,3,0.003,estimate
+call,FaceTime,Video,250,0.250,estimate
+call,Google Meet,HD video,800,0.800,estimate

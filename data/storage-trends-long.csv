@@ -1,0 +1,451 @@
+country_code,country,query,avg_monthly_searches,competition
+US,"United States","free up iphone storage",1900,medium
+US,"United States","iphone storage full",4400,medium
+US,"United States","how to free up space on iphone",12100,medium
+US,"United States","iphone running out of storage",210,medium
+US,"United States","clear storage iphone",3600,medium
+US,"United States","clear cache iphone",18100,low
+US,"United States","other storage iphone",10,low
+US,"United States","system data iphone",1600,low
+US,"United States","delete duplicate photos",1900,medium
+US,"United States","delete duplicate photos iphone",4400,medium
+US,"United States","phone storage full",720,medium
+US,"United States","free up space on phone",320,low
+US,"United States","clean up storage",880,medium
+US,"United States","best phone cleaner app",1000,medium
+US,"United States","find duplicate files",590,low
+IN,"India","free up iphone storage",70,low
+IN,"India","iphone storage full",1300,low
+IN,"India","how to free up space on iphone",1300,low
+IN,"India","iphone running out of storage",20,low
+IN,"India","clear storage iphone",480,low
+IN,"India","clear cache iphone",2900,low
+IN,"India","other storage iphone",10,
+IN,"India","system data iphone",40,low
+IN,"India","delete duplicate photos",880,medium
+IN,"India","delete duplicate photos iphone",320,medium
+IN,"India","phone storage full",590,low
+IN,"India","free up space on phone",20,low
+IN,"India","clean up storage",480,low
+IN,"India","best phone cleaner app",390,medium
+IN,"India","find duplicate files",140,low
+GB,"United Kingdom","free up iphone storage",720,medium
+GB,"United Kingdom","iphone storage full",1300,medium
+GB,"United Kingdom","how to free up space on iphone",2900,medium
+GB,"United Kingdom","iphone running out of storage",70,medium
+GB,"United Kingdom","clear storage iphone",880,medium
+GB,"United Kingdom","clear cache iphone",8100,low
+GB,"United Kingdom","other storage iphone",10,low
+GB,"United Kingdom","system data iphone",260,low
+GB,"United Kingdom","delete duplicate photos",590,medium
+GB,"United Kingdom","delete duplicate photos iphone",1600,medium
+GB,"United Kingdom","phone storage full",260,medium
+GB,"United Kingdom","free up space on phone",40,medium
+GB,"United Kingdom","clean up storage",170,medium
+GB,"United Kingdom","best phone cleaner app",210,high
+GB,"United Kingdom","find duplicate files",210,medium
+CA,"Canada","free up iphone storage",170,medium
+CA,"Canada","iphone storage full",590,medium
+CA,"Canada","how to free up space on iphone",1300,medium
+CA,"Canada","iphone running out of storage",30,low
+CA,"Canada","clear storage iphone",320,medium
+CA,"Canada","clear cache iphone",2400,low
+CA,"Canada","other storage iphone",10,low
+CA,"Canada","system data iphone",170,low
+CA,"Canada","delete duplicate photos",210,medium
+CA,"Canada","delete duplicate photos iphone",480,medium
+CA,"Canada","phone storage full",70,medium
+CA,"Canada","free up space on phone",20,low
+CA,"Canada","clean up storage",110,medium
+CA,"Canada","best phone cleaner app",70,high
+CA,"Canada","find duplicate files",110,low
+AU,"Australia","free up iphone storage",170,medium
+AU,"Australia","iphone storage full",390,medium
+AU,"Australia","how to free up space on iphone",590,medium
+AU,"Australia","iphone running out of storage",20,low
+AU,"Australia","clear storage iphone",260,medium
+AU,"Australia","clear cache iphone",5400,low
+AU,"Australia","other storage iphone",10,
+AU,"Australia","system data iphone",110,low
+AU,"Australia","delete duplicate photos",320,medium
+AU,"Australia","delete duplicate photos iphone",480,medium
+AU,"Australia","phone storage full",70,medium
+AU,"Australia","free up space on phone",20,low
+AU,"Australia","clean up storage",70,medium
+AU,"Australia","best phone cleaner app",50,medium
+AU,"Australia","find duplicate files",90,low
+DE,"Germany","free up iphone storage",20,low
+DE,"Germany","iphone storage full",140,low
+DE,"Germany","how to free up space on iphone",90,medium
+DE,"Germany","iphone running out of storage",10,low
+DE,"Germany","clear storage iphone",40,medium
+DE,"Germany","clear cache iphone",480,low
+DE,"Germany","other storage iphone",10,
+DE,"Germany","system data iphone",50,low
+DE,"Germany","delete duplicate photos",30,medium
+DE,"Germany","delete duplicate photos iphone",70,medium
+DE,"Germany","phone storage full",10,low
+DE,"Germany","free up space on phone",10,
+DE,"Germany","clean up storage",10,medium
+DE,"Germany","best phone cleaner app",10,low
+DE,"Germany","find duplicate files",110,low
+FR,"France","free up iphone storage",10,medium
+FR,"France","iphone storage full",50,low
+FR,"France","how to free up space on iphone",50,medium
+FR,"France","iphone running out of storage",10,low
+FR,"France","clear storage iphone",30,medium
+FR,"France","clear cache iphone",260,low
+FR,"France","other storage iphone",10,
+FR,"France","system data iphone",50,low
+FR,"France","delete duplicate photos",30,medium
+FR,"France","delete duplicate photos iphone",40,medium
+FR,"France","phone storage full",10,low
+FR,"France","free up space on phone",10,
+FR,"France","clean up storage",10,medium
+FR,"France","best phone cleaner app",10,low
+FR,"France","find duplicate files",70,low
+BR,"Brazil","free up iphone storage",10,medium
+BR,"Brazil","iphone storage full",50,medium
+BR,"Brazil","how to free up space on iphone",30,medium
+BR,"Brazil","iphone running out of storage",10,high
+BR,"Brazil","clear storage iphone",30,medium
+BR,"Brazil","clear cache iphone",140,low
+BR,"Brazil","other storage iphone",10,
+BR,"Brazil","system data iphone",90,low
+BR,"Brazil","delete duplicate photos",20,medium
+BR,"Brazil","delete duplicate photos iphone",20,medium
+BR,"Brazil","phone storage full",10,low
+BR,"Brazil","free up space on phone",10,low
+BR,"Brazil","clean up storage",10,medium
+BR,"Brazil","best phone cleaner app",10,
+BR,"Brazil","find duplicate files",70,low
+MX,"Mexico","free up iphone storage",10,medium
+MX,"Mexico","iphone storage full",50,low
+MX,"Mexico","how to free up space on iphone",70,medium
+MX,"Mexico","iphone running out of storage",10,
+MX,"Mexico","clear storage iphone",20,medium
+MX,"Mexico","clear cache iphone",170,low
+MX,"Mexico","other storage iphone",10,
+MX,"Mexico","system data iphone",90,low
+MX,"Mexico","delete duplicate photos",20,medium
+MX,"Mexico","delete duplicate photos iphone",30,medium
+MX,"Mexico","phone storage full",10,low
+MX,"Mexico","free up space on phone",10,
+MX,"Mexico","clean up storage",10,medium
+MX,"Mexico","best phone cleaner app",10,medium
+MX,"Mexico","find duplicate files",20,medium
+ID,"Indonesia","free up iphone storage",30,medium
+ID,"Indonesia","iphone storage full",390,low
+ID,"Indonesia","how to free up space on iphone",90,medium
+ID,"Indonesia","iphone running out of storage",10,low
+ID,"Indonesia","clear storage iphone",90,medium
+ID,"Indonesia","clear cache iphone",1900,low
+ID,"Indonesia","other storage iphone",10,
+ID,"Indonesia","system data iphone",210,low
+ID,"Indonesia","delete duplicate photos",20,medium
+ID,"Indonesia","delete duplicate photos iphone",40,medium
+ID,"Indonesia","phone storage full",10,low
+ID,"Indonesia","free up space on phone",10,low
+ID,"Indonesia","clean up storage",30,low
+ID,"Indonesia","best phone cleaner app",10,low
+ID,"Indonesia","find duplicate files",30,low
+PH,"Philippines","free up iphone storage",30,low
+PH,"Philippines","iphone storage full",480,low
+PH,"Philippines","how to free up space on iphone",480,medium
+PH,"Philippines","iphone running out of storage",10,low
+PH,"Philippines","clear storage iphone",110,medium
+PH,"Philippines","clear cache iphone",2400,low
+PH,"Philippines","other storage iphone",10,low
+PH,"Philippines","system data iphone",260,low
+PH,"Philippines","delete duplicate photos",50,medium
+PH,"Philippines","delete duplicate photos iphone",90,medium
+PH,"Philippines","phone storage full",70,low
+PH,"Philippines","free up space on phone",10,low
+PH,"Philippines","clean up storage",210,low
+PH,"Philippines","best phone cleaner app",70,medium
+PH,"Philippines","find duplicate files",30,low
+NG,"Nigeria","free up iphone storage",10,medium
+NG,"Nigeria","iphone storage full",260,low
+NG,"Nigeria","how to free up space on iphone",1000,medium
+NG,"Nigeria","iphone running out of storage",10,medium
+NG,"Nigeria","clear storage iphone",40,medium
+NG,"Nigeria","clear cache iphone",70,low
+NG,"Nigeria","other storage iphone",0,
+NG,"Nigeria","system data iphone",10,medium
+NG,"Nigeria","delete duplicate photos",10,medium
+NG,"Nigeria","delete duplicate photos iphone",10,medium
+NG,"Nigeria","phone storage full",50,low
+NG,"Nigeria","free up space on phone",10,low
+NG,"Nigeria","clean up storage",10,medium
+NG,"Nigeria","best phone cleaner app",10,medium
+NG,"Nigeria","find duplicate files",10,
+PK,"Pakistan","free up iphone storage",10,medium
+PK,"Pakistan","iphone storage full",50,low
+PK,"Pakistan","how to free up space on iphone",70,medium
+PK,"Pakistan","iphone running out of storage",10,
+PK,"Pakistan","clear storage iphone",20,medium
+PK,"Pakistan","clear cache iphone",90,low
+PK,"Pakistan","other storage iphone",0,
+PK,"Pakistan","system data iphone",10,medium
+PK,"Pakistan","delete duplicate photos",70,medium
+PK,"Pakistan","delete duplicate photos iphone",10,medium
+PK,"Pakistan","phone storage full",10,low
+PK,"Pakistan","free up space on phone",10,
+PK,"Pakistan","clean up storage",40,low
+PK,"Pakistan","best phone cleaner app",20,medium
+PK,"Pakistan","find duplicate files",20,low
+JP,"Japan","free up iphone storage",10,low
+JP,"Japan","iphone storage full",50,low
+JP,"Japan","how to free up space on iphone",50,medium
+JP,"Japan","iphone running out of storage",10,
+JP,"Japan","clear storage iphone",20,medium
+JP,"Japan","clear cache iphone",210,low
+JP,"Japan","other storage iphone",0,
+JP,"Japan","system data iphone",20,low
+JP,"Japan","delete duplicate photos",20,medium
+JP,"Japan","delete duplicate photos iphone",50,medium
+JP,"Japan","phone storage full",10,medium
+JP,"Japan","free up space on phone",10,high
+JP,"Japan","clean up storage",10,medium
+JP,"Japan","best phone cleaner app",10,high
+JP,"Japan","find duplicate files",20,low
+KR,"South Korea","free up iphone storage",10,medium
+KR,"South Korea","iphone storage full",20,medium
+KR,"South Korea","how to free up space on iphone",10,medium
+KR,"South Korea","iphone running out of storage",10,
+KR,"South Korea","clear storage iphone",10,medium
+KR,"South Korea","clear cache iphone",50,low
+KR,"South Korea","other storage iphone",10,
+KR,"South Korea","system data iphone",10,low
+KR,"South Korea","delete duplicate photos",10,medium
+KR,"South Korea","delete duplicate photos iphone",10,medium
+KR,"South Korea","phone storage full",10,medium
+KR,"South Korea","free up space on phone",10,
+KR,"South Korea","clean up storage",10,medium
+KR,"South Korea","best phone cleaner app",10,high
+KR,"South Korea","find duplicate files",10,medium
+IT,"Italy","free up iphone storage",10,medium
+IT,"Italy","iphone storage full",70,medium
+IT,"Italy","how to free up space on iphone",90,medium
+IT,"Italy","iphone running out of storage",10,high
+IT,"Italy","clear storage iphone",20,medium
+IT,"Italy","clear cache iphone",260,low
+IT,"Italy","other storage iphone",10,
+IT,"Italy","system data iphone",50,low
+IT,"Italy","delete duplicate photos",30,medium
+IT,"Italy","delete duplicate photos iphone",40,medium
+IT,"Italy","phone storage full",10,low
+IT,"Italy","free up space on phone",10,
+IT,"Italy","clean up storage",10,low
+IT,"Italy","best phone cleaner app",10,medium
+IT,"Italy","find duplicate files",50,low
+ES,"Spain","free up iphone storage",10,medium
+ES,"Spain","iphone storage full",50,low
+ES,"Spain","how to free up space on iphone",70,medium
+ES,"Spain","iphone running out of storage",10,
+ES,"Spain","clear storage iphone",30,medium
+ES,"Spain","clear cache iphone",210,low
+ES,"Spain","other storage iphone",10,low
+ES,"Spain","system data iphone",40,low
+ES,"Spain","delete duplicate photos",30,medium
+ES,"Spain","delete duplicate photos iphone",50,medium
+ES,"Spain","phone storage full",10,medium
+ES,"Spain","free up space on phone",10,low
+ES,"Spain","clean up storage",10,medium
+ES,"Spain","best phone cleaner app",10,medium
+ES,"Spain","find duplicate files",40,low
+NL,"Netherlands","free up iphone storage",20,medium
+NL,"Netherlands","iphone storage full",110,medium
+NL,"Netherlands","how to free up space on iphone",70,medium
+NL,"Netherlands","iphone running out of storage",10,low
+NL,"Netherlands","clear storage iphone",40,medium
+NL,"Netherlands","clear cache iphone",390,low
+NL,"Netherlands","other storage iphone",10,
+NL,"Netherlands","system data iphone",50,low
+NL,"Netherlands","delete duplicate photos",20,medium
+NL,"Netherlands","delete duplicate photos iphone",50,medium
+NL,"Netherlands","phone storage full",20,low
+NL,"Netherlands","free up space on phone",10,high
+NL,"Netherlands","clean up storage",10,medium
+NL,"Netherlands","best phone cleaner app",10,medium
+NL,"Netherlands","find duplicate files",70,low
+SA,"Saudi Arabia","free up iphone storage",10,high
+SA,"Saudi Arabia","iphone storage full",50,low
+SA,"Saudi Arabia","how to free up space on iphone",50,medium
+SA,"Saudi Arabia","iphone running out of storage",10,
+SA,"Saudi Arabia","clear storage iphone",20,medium
+SA,"Saudi Arabia","clear cache iphone",110,low
+SA,"Saudi Arabia","other storage iphone",10,
+SA,"Saudi Arabia","system data iphone",10,low
+SA,"Saudi Arabia","delete duplicate photos",20,medium
+SA,"Saudi Arabia","delete duplicate photos iphone",20,medium
+SA,"Saudi Arabia","phone storage full",10,low
+SA,"Saudi Arabia","free up space on phone",10,
+SA,"Saudi Arabia","clean up storage",10,low
+SA,"Saudi Arabia","best phone cleaner app",10,medium
+SA,"Saudi Arabia","find duplicate files",10,low
+AE,"United Arab Emirates","free up iphone storage",10,medium
+AE,"United Arab Emirates","iphone storage full",90,low
+AE,"United Arab Emirates","how to free up space on iphone",90,medium
+AE,"United Arab Emirates","iphone running out of storage",10,
+AE,"United Arab Emirates","clear storage iphone",30,medium
+AE,"United Arab Emirates","clear cache iphone",320,low
+AE,"United Arab Emirates","other storage iphone",0,
+AE,"United Arab Emirates","system data iphone",10,low
+AE,"United Arab Emirates","delete duplicate photos",40,medium
+AE,"United Arab Emirates","delete duplicate photos iphone",40,medium
+AE,"United Arab Emirates","phone storage full",10,low
+AE,"United Arab Emirates","free up space on phone",10,
+AE,"United Arab Emirates","clean up storage",10,medium
+AE,"United Arab Emirates","best phone cleaner app",10,medium
+AE,"United Arab Emirates","find duplicate files",10,medium
+TR,"Turkey","free up iphone storage",10,medium
+TR,"Turkey","iphone storage full",40,medium
+TR,"Turkey","how to free up space on iphone",20,medium
+TR,"Turkey","iphone running out of storage",10,
+TR,"Turkey","clear storage iphone",10,medium
+TR,"Turkey","clear cache iphone",90,low
+TR,"Turkey","other storage iphone",10,
+TR,"Turkey","system data iphone",10,low
+TR,"Turkey","delete duplicate photos",20,medium
+TR,"Turkey","delete duplicate photos iphone",20,medium
+TR,"Turkey","phone storage full",10,high
+TR,"Turkey","free up space on phone",10,
+TR,"Turkey","clean up storage",10,medium
+TR,"Turkey","best phone cleaner app",10,low
+TR,"Turkey","find duplicate files",20,low
+EG,"Egypt","free up iphone storage",10,medium
+EG,"Egypt","iphone storage full",50,low
+EG,"Egypt","how to free up space on iphone",70,medium
+EG,"Egypt","iphone running out of storage",10,low
+EG,"Egypt","clear storage iphone",20,medium
+EG,"Egypt","clear cache iphone",140,low
+EG,"Egypt","other storage iphone",10,
+EG,"Egypt","system data iphone",10,low
+EG,"Egypt","delete duplicate photos",30,medium
+EG,"Egypt","delete duplicate photos iphone",20,medium
+EG,"Egypt","phone storage full",10,low
+EG,"Egypt","free up space on phone",10,
+EG,"Egypt","clean up storage",10,low
+EG,"Egypt","best phone cleaner app",10,low
+EG,"Egypt","find duplicate files",20,low
+ZA,"South Africa","free up iphone storage",20,medium
+ZA,"South Africa","iphone storage full",260,low
+ZA,"South Africa","how to free up space on iphone",260,medium
+ZA,"South Africa","iphone running out of storage",10,low
+ZA,"South Africa","clear storage iphone",90,medium
+ZA,"South Africa","clear cache iphone",210,low
+ZA,"South Africa","other storage iphone",10,
+ZA,"South Africa","system data iphone",50,low
+ZA,"South Africa","delete duplicate photos",70,medium
+ZA,"South Africa","delete duplicate photos iphone",90,medium
+ZA,"South Africa","phone storage full",40,low
+ZA,"South Africa","free up space on phone",10,low
+ZA,"South Africa","clean up storage",140,low
+ZA,"South Africa","best phone cleaner app",30,medium
+ZA,"South Africa","find duplicate files",30,medium
+VN,"Vietnam","free up iphone storage",10,medium
+VN,"Vietnam","iphone storage full",50,low
+VN,"Vietnam","how to free up space on iphone",30,medium
+VN,"Vietnam","iphone running out of storage",10,low
+VN,"Vietnam","clear storage iphone",20,medium
+VN,"Vietnam","clear cache iphone",110,low
+VN,"Vietnam","other storage iphone",10,
+VN,"Vietnam","system data iphone",30,low
+VN,"Vietnam","delete duplicate photos",20,medium
+VN,"Vietnam","delete duplicate photos iphone",20,medium
+VN,"Vietnam","phone storage full",10,low
+VN,"Vietnam","free up space on phone",10,medium
+VN,"Vietnam","clean up storage",10,medium
+VN,"Vietnam","best phone cleaner app",10,low
+VN,"Vietnam","find duplicate files",20,low
+TH,"Thailand","free up iphone storage",10,medium
+TH,"Thailand","iphone storage full",110,low
+TH,"Thailand","how to free up space on iphone",40,medium
+TH,"Thailand","iphone running out of storage",10,low
+TH,"Thailand","clear storage iphone",70,medium
+TH,"Thailand","clear cache iphone",1000,low
+TH,"Thailand","other storage iphone",0,
+TH,"Thailand","system data iphone",170,low
+TH,"Thailand","delete duplicate photos",20,medium
+TH,"Thailand","delete duplicate photos iphone",50,medium
+TH,"Thailand","phone storage full",10,low
+TH,"Thailand","free up space on phone",10,
+TH,"Thailand","clean up storage",10,low
+TH,"Thailand","best phone cleaner app",10,low
+TH,"Thailand","find duplicate files",20,low
+MY,"Malaysia","free up iphone storage",20,medium
+MY,"Malaysia","iphone storage full",390,low
+MY,"Malaysia","how to free up space on iphone",140,medium
+MY,"Malaysia","iphone running out of storage",10,low
+MY,"Malaysia","clear storage iphone",210,medium
+MY,"Malaysia","clear cache iphone",1600,low
+MY,"Malaysia","other storage iphone",10,
+MY,"Malaysia","system data iphone",90,low
+MY,"Malaysia","delete duplicate photos",40,medium
+MY,"Malaysia","delete duplicate photos iphone",50,low
+MY,"Malaysia","phone storage full",50,low
+MY,"Malaysia","free up space on phone",10,low
+MY,"Malaysia","clean up storage",50,medium
+MY,"Malaysia","best phone cleaner app",10,medium
+MY,"Malaysia","find duplicate files",20,low
+SG,"Singapore","free up iphone storage",20,low
+SG,"Singapore","iphone storage full",110,low
+SG,"Singapore","how to free up space on iphone",140,medium
+SG,"Singapore","iphone running out of storage",10,low
+SG,"Singapore","clear storage iphone",70,medium
+SG,"Singapore","clear cache iphone",1000,low
+SG,"Singapore","other storage iphone",10,
+SG,"Singapore","system data iphone",40,low
+SG,"Singapore","delete duplicate photos",30,medium
+SG,"Singapore","delete duplicate photos iphone",90,low
+SG,"Singapore","phone storage full",10,low
+SG,"Singapore","free up space on phone",10,low
+SG,"Singapore","clean up storage",10,medium
+SG,"Singapore","best phone cleaner app",10,medium
+SG,"Singapore","find duplicate files",10,low
+BD,"Bangladesh","free up iphone storage",10,low
+BD,"Bangladesh","iphone storage full",40,low
+BD,"Bangladesh","how to free up space on iphone",20,low
+BD,"Bangladesh","iphone running out of storage",10,
+BD,"Bangladesh","clear storage iphone",10,medium
+BD,"Bangladesh","clear cache iphone",30,low
+BD,"Bangladesh","other storage iphone",0,
+BD,"Bangladesh","system data iphone",10,
+BD,"Bangladesh","delete duplicate photos",30,medium
+BD,"Bangladesh","delete duplicate photos iphone",10,low
+BD,"Bangladesh","phone storage full",20,low
+BD,"Bangladesh","free up space on phone",10,
+BD,"Bangladesh","clean up storage",20,low
+BD,"Bangladesh","best phone cleaner app",30,medium
+BD,"Bangladesh","find duplicate files",20,low
+PL,"Poland","free up iphone storage",10,medium
+PL,"Poland","iphone storage full",40,low
+PL,"Poland","how to free up space on iphone",40,medium
+PL,"Poland","iphone running out of storage",10,
+PL,"Poland","clear storage iphone",20,medium
+PL,"Poland","clear cache iphone",90,low
+PL,"Poland","other storage iphone",10,
+PL,"Poland","system data iphone",30,low
+PL,"Poland","delete duplicate photos",10,medium
+PL,"Poland","delete duplicate photos iphone",20,medium
+PL,"Poland","phone storage full",10,low
+PL,"Poland","free up space on phone",10,
+PL,"Poland","clean up storage",10,low
+PL,"Poland","best phone cleaner app",10,medium
+PL,"Poland","find duplicate files",40,low
+SE,"Sweden","free up iphone storage",10,medium
+SE,"Sweden","iphone storage full",50,low
+SE,"Sweden","how to free up space on iphone",50,medium
+SE,"Sweden","iphone running out of storage",10,
+SE,"Sweden","clear storage iphone",20,medium
+SE,"Sweden","clear cache iphone",320,low
+SE,"Sweden","other storage iphone",10,
+SE,"Sweden","system data iphone",210,low
+SE,"Sweden","delete duplicate photos",10,medium
+SE,"Sweden","delete duplicate photos iphone",30,medium
+SE,"Sweden","phone storage full",10,low
+SE,"Sweden","free up space on phone",10,
+SE,"Sweden","clean up storage",10,low
+SE,"Sweden","best phone cleaner app",10,high
+SE,"Sweden","find duplicate files",40,low

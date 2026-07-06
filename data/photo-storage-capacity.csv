@@ -1,0 +1,33 @@
+kind,item,item_size_mb,tier_advertised_gb,tier_usable_gb,capacity,unit
+photos,HEIC 12 MP,3,64,50,16667,photos
+photos,HEIC 12 MP,3,128,112,37333,photos
+photos,HEIC 12 MP,3,256,228,76000,photos
+photos,HEIC 12 MP,3,512,466,155333,photos
+photos,JPEG 12 MP,5,64,50,10000,photos
+photos,JPEG 12 MP,5,128,112,22400,photos
+photos,JPEG 12 MP,5,256,228,45600,photos
+photos,JPEG 12 MP,5,512,466,93200,photos
+photos,HEIF 48 MP,25,64,50,2000,photos
+photos,HEIF 48 MP,25,128,112,4480,photos
+photos,HEIF 48 MP,25,256,228,9120,photos
+photos,HEIF 48 MP,25,512,466,18640,photos
+photos,ProRAW 48 MP,75,64,50,667,photos
+photos,ProRAW 48 MP,75,128,112,1493,photos
+photos,ProRAW 48 MP,75,256,228,3040,photos
+photos,ProRAW 48 MP,75,512,466,6213,photos
+video,1080p 30fps,60/min,64,50,833,minutes
+video,1080p 30fps,60/min,128,112,1867,minutes
+video,1080p 30fps,60/min,256,228,3800,minutes
+video,1080p 30fps,60/min,512,466,7767,minutes
+video,4K 30fps,170/min,64,50,294,minutes
+video,4K 30fps,170/min,128,112,659,minutes
+video,4K 30fps,170/min,256,228,1341,minutes
+video,4K 30fps,170/min,512,466,2741,minutes
+video,4K 60fps,400/min,64,50,125,minutes
+video,4K 60fps,400/min,128,112,280,minutes
+video,4K 60fps,400/min,256,228,570,minutes
+video,4K 60fps,400/min,512,466,1165,minutes
+video,ProRes 4K,6000/min,64,50,8,minutes
+video,ProRes 4K,6000/min,128,112,19,minutes
+video,ProRes 4K,6000/min,256,228,38,minutes
+video,ProRes 4K,6000/min,512,466,78,minutes

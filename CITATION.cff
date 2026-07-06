@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use these datasets, please cite them as below."
+title: "Storage Lab: Open Image-Compression & Cloud-Storage Datasets"
+authors:
+  - name: "Cleanor Labs"
+url: "https://cleanor.app/research"
+repository-code: "https://github.com/cleanor-app/cleanor-storage-lab"
+license: MIT
+date-released: 2026-07-06
+version: "1.0.0"
+keywords:
+  - image compression
+  - AVIF
+  - WebP
+  - JPEG XL
+  - HEIC
+  - cloud storage
+  - benchmark
+  - open data

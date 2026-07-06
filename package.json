@@ -1,0 +1,36 @@
+{
+  "name": "cleanor-storage-lab",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Reproducible benchmarks and open datasets on image compression (JPEG/WebP/AVIF/JPEG XL), the HEIC-to-JPG size tax, cloud storage $/GB, and phone storage capacity.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://cleanor.app/research",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cleanor-app/cleanor-storage-lab.git"
+  },
+  "keywords": [
+    "image-compression",
+    "avif",
+    "webp",
+    "jpeg-xl",
+    "heic",
+    "benchmark",
+    "dataset",
+    "ssim",
+    "cloud-storage",
+    "open-data"
+  ],
+  "scripts": {
+    "compression": "node benchmarks/compression-benchmark.mjs",
+    "nextgen": "node benchmarks/nextgen-formats-benchmark.mjs",
+    "heic-tax": "node benchmarks/heic-tax-benchmark.mjs",
+    "cloud-price": "node benchmarks/cloud-price-index.mjs",
+    "streaming": "node benchmarks/streaming-data-usage.mjs",
+    "photo-capacity": "node benchmarks/photo-storage-capacity.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}
