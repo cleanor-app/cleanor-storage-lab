@@ -5,8 +5,7 @@ Reproducible benchmarks and open datasets on **image compression (JPEG / WebP / 
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](data/LICENSE)
 [![Studies](https://img.shields.io/badge/read%20the%20studies-cleanor.app%2Fresearch-0a7cff.svg)](https://cleanor.app/research)
-<!-- DOI: after the first Zenodo release, paste the badge Zenodo gives you here, e.g.
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21217372.svg)](https://doi.org/10.5281/zenodo.21217372)
 
 > 📊 **Human-readable write-ups, with charts and methodology, live at [cleanor.app/research](https://cleanor.app/research).** This repo is the raw data and the harness behind them.
 
@@ -136,9 +135,9 @@ Please keep data and code changes in separate commits, and note your corpus/enco
 
 If you use these datasets or figures, cite:
 
-> Cleanor Labs, *Storage Lab: Open Image-Compression & Cloud-Storage Datasets*, 2026. https://github.com/cleanor-app/cleanor-storage-lab
+> Cleanor Labs, *Storage Lab: Open Image-Compression & Cloud-Storage Datasets*, 2026. Zenodo. https://doi.org/10.5281/zenodo.21217372
 
-A [`CITATION.cff`](CITATION.cff) is included for GitHub's "Cite this repository" button (author [ORCID 0009-0005-4623-961X](https://orcid.org/0009-0005-4623-961X)). A versioned, DOI-assigned archive is deposited on Zenodo. Full write-ups: **https://cleanor.app/research**.
+A [`CITATION.cff`](CITATION.cff) is included for GitHub's "Cite this repository" button (author [ORCID 0009-0005-4623-961X](https://orcid.org/0009-0005-4623-961X)). The archived, citable version has DOI [10.5281/zenodo.21217372](https://doi.org/10.5281/zenodo.21217372). Full write-ups: **https://cleanor.app/research**.
 
 **Preprint:** the HEIC-tax study is written up as a manuscript — [`docs/preprints/heic-conversion-file-size-tax.md`](docs/preprints/heic-conversion-file-size-tax.md) ([PDF](docs/preprints/heic-conversion-file-size-tax.pdf)).
 

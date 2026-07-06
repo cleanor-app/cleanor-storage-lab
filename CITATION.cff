@@ -9,6 +9,11 @@ repository-code: "https://github.com/cleanor-app/cleanor-storage-lab"
 license: MIT
 date-released: 2026-07-06
 version: "1.0.0"
+doi: "10.5281/zenodo.21217372"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21217372"
+    description: "Archived version on Zenodo"
 keywords:
   - image compression
   - AVIF
