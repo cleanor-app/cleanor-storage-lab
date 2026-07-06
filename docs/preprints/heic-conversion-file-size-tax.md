@@ -29,7 +29,7 @@ any quality benefit, and we release the full dataset and reproducible harness.
 
 Since iOS 11 (2017), Apple devices capture photographs by default in the High
 Efficiency Image File Format (HEIF) with HEVC-coded image items, commonly seen
-by users through the `.heic` extension [@heif]. HEIF/HEVC intra-coding is
+by users through the `.heic` extension [2]. HEIF/HEVC intra-coding is
 markedly more efficient than baseline JPEG. However, HEIC is not universally
 supported by web platforms, editing software, and third-party services, so users
 routinely convert their photos to JPEG (or, less advisedly, PNG) for
@@ -53,7 +53,7 @@ produces: JPEG at quality {80, 90, 95, 100} using the same imaging engine that
 backs the authors' browser tools (libvips/sharp), and lossless PNG.
 
 **Quality metric.** For the HEIC and every JPEG output we compute the structural
-similarity index, SSIM [@wang2004ssim], against the lossless master using
+similarity index, SSIM [1], against the lossless master using
 `ffmpeg`. PNG is lossless by construction. Reporting size at matched SSIM ensures
 that a smaller file is not merely a lower-quality file.
 
