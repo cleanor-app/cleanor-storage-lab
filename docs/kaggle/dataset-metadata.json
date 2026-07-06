@@ -1,28 +1,784 @@
 {
-  "title": "Storage Lab: Image Compression & Cloud Storage Benchmarks",
-  "id": "cleanorlabs/storage-lab-image-compression-benchmarks",
-  "subtitle": "Reproducible JPEG/WebP/AVIF/JPEG XL, HEIC-tax and cloud $/GB open datasets",
-  "licenses": [{ "name": "CC-BY-4.0" }],
+  "id": "cleanorlabs/image-conversions-tax",
+  "title": "Image Compression Benchmarks: JPEG/WebP/AVIF/HEIC",
+  "subtitle": "Reproducible JPEG/WebP/AVIF/JXL, HEIC-tax & cloud $/GB benchmarks, SSIM-scored",
+  "description": "Reproducible, original benchmarks on image compression and digital storage — with the harness that produced them, so every number can be verified or re-run on your own images.\n\n![JPEG vs WebP vs AVIF at matched quality](https://raw.githubusercontent.com/cleanor-app/cleanor-storage-lab/main/docs/charts/compression-savings.png)\n\n**What's inside**\n- **Image compression** (`compression-benchmark*.csv`): JPEG / WebP / AVIF across a full quality ladder, scored with SSIM + PSNR against the lossless master. At matched perceptual quality (SSIM 0.95), AVIF is ~41% smaller than JPEG; WebP is *larger than JPEG* above SSIM 0.98.\n- **Next-gen formats** (`nextgen-formats-benchmark.csv`): adds JPEG XL, including bit-exact lossless recompression of an existing JPEG (~20% smaller, reversible).\n- **The HEIC tax** (`heic-tax-*.csv`): converting iPhone HEIC to JPG inflates files 1.75×–4.65×, and to PNG 3.87×–13.6×, at matched quality — for no visual gain.\n\n![The HEIC tax](https://raw.githubusercontent.com/cleanor-app/cleanor-storage-lab/main/docs/charts/heic-tax.png)\n\n- **Cloud storage price index** (`cloud-price-index.csv`): $/GB/month and 10-year cost across Apple, Google, Microsoft, Dropbox, Amazon, Proton, Box, pCloud, Backblaze.\n- **Reference** (`streaming-data-usage.csv`, `photo-storage-capacity.csv`, `passport-photo-specs.csv`, `storage-trends-*.csv`).\n\n**License:** CC BY 4.0 (attribution to Cleanor Labs).\n**Methodology & code:** https://github.com/cleanor-app/cleanor-storage-lab\n**Citable version (DOI):** https://doi.org/10.5281/zenodo.21217372\n**Write-ups with charts:** https://cleanor.app/research",
+  "licenses": [
+    {
+      "name": "CC BY 4.0"
+    }
+  ],
   "keywords": [
-    "computer science",
-    "internet",
-    "image data",
-    "image processing",
-    "exploratory data analysis"
+    "image",
+    "tabular",
+    "data analytics",
+    "data visualization",
+    "graph"
   ],
   "resources": [
-    { "path": "compression-benchmark.csv", "description": "Per-image JPEG/WebP/AVIF encodes across a quality ladder with SSIM+PSNR vs the lossless master." },
-    { "path": "compression-benchmark-summary.csv", "description": "Mean size/SSIM/PSNR per format+quality and bytes at matched SSIM (0.95/0.98/0.99)." },
-    { "path": "compression-benchmark-hires.csv", "description": "Same benchmark on high-resolution (12 MP) phone photos." },
-    { "path": "nextgen-formats-benchmark.csv", "description": "JPEG/WebP/AVIF/JPEG XL at matched SSIM, plus JXL lossless recompression of a JPEG." },
-    { "path": "heic-tax-benchmark.csv", "description": "HEIC to JPG/PNG conversion sizes with SSIM vs master (the HEIC tax)." },
-    { "path": "heic-tax-summary.csv", "description": "Median size multiplier of converting HEIC to JPG/PNG at matched quality." },
-    { "path": "cloud-price-index.csv", "description": "Cloud storage $/GB/month and 10-year cost across major providers (2026 US list prices)." },
-    { "path": "streaming-data-usage.csv", "description": "MB/hour by streaming service and tier (official + measured)." },
-    { "path": "photo-storage-capacity.csv", "description": "How many HEIC/JPEG/48MP/ProRAW photos fit per iPhone storage tier." },
-    { "path": "passport-photo-specs.csv", "description": "Passport/visa photo specs (mm, head size, background, digital limits) by country." },
-    { "path": "storage-trends-long.csv", "description": "Search demand for storage-cleanup queries by country." },
-    { "path": "storage-trends-monthly.csv", "description": "Monthly search volume for storage-cleanup queries." },
-    { "path": "storage-trends-by-country.csv", "description": "Storage-cleanup search demand pivoted by country and query." }
+    {
+      "path": "cloud-price-index.csv",
+      "description": "Cloud storage $/GB/month and 10-year cost across major providers (2026 US list prices).",
+      "schema": {
+        "fields": [
+          {
+            "name": "provider",
+            "description": "Cloud storage provider",
+            "type": "string"
+          },
+          {
+            "name": "tier_gb",
+            "description": "Plan storage size in GB",
+            "type": "number"
+          },
+          {
+            "name": "monthly_usd",
+            "description": "Monthly price in USD",
+            "type": "number"
+          },
+          {
+            "name": "annual_usd",
+            "description": "Annual price in USD (blank if monthly-only)",
+            "type": "string"
+          },
+          {
+            "name": "usd_per_gb_month",
+            "description": "Price per GB per month in USD",
+            "type": "number"
+          },
+          {
+            "name": "ten_year_usd",
+            "description": "Cheapest 10-year cost in USD",
+            "type": "number"
+          },
+          {
+            "name": "bundled",
+            "description": "Whether Office/apps are bundled",
+            "type": "string"
+          },
+          {
+            "name": "verified",
+            "description": "\"yes\" if confirmed on the provider page, else \"list\"",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "compression-benchmark-hires.csv",
+      "description": "Same benchmark on high-resolution (12 MP) phone photos.",
+      "schema": {
+        "fields": [
+          {
+            "name": "image",
+            "description": "Source image identifier",
+            "type": "string"
+          },
+          {
+            "name": "width",
+            "description": "Image width in pixels",
+            "type": "number"
+          },
+          {
+            "name": "height",
+            "description": "Image height in pixels",
+            "type": "number"
+          },
+          {
+            "name": "pixels",
+            "description": "Total pixels (width×height)",
+            "type": "number"
+          },
+          {
+            "name": "format",
+            "description": "Codec/format of the encoded output",
+            "type": "string"
+          },
+          {
+            "name": "quality",
+            "description": "Encoder quality setting",
+            "type": "number"
+          },
+          {
+            "name": "bytes",
+            "description": "Encoded file size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "bpp",
+            "description": "Bits per pixel of the encoded output",
+            "type": "number"
+          },
+          {
+            "name": "ssim",
+            "description": "Structural similarity vs the lossless master (1.0 = identical)",
+            "type": "number"
+          },
+          {
+            "name": "psnr",
+            "description": "Peak signal-to-noise ratio in dB vs the master (higher = closer)",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "path": "compression-benchmark-summary.csv",
+      "description": "Mean size/SSIM/PSNR per format+quality and bytes at matched SSIM (0.95/0.98/0.99).",
+      "schema": {
+        "fields": [
+          {
+            "name": "metric",
+            "description": "Name of the summary metric",
+            "type": "string"
+          },
+          {
+            "name": "format",
+            "description": "Codec/format of the encoded output",
+            "type": "string"
+          },
+          {
+            "name": "quality_or_target",
+            "description": "Quality level or target SSIM the metric refers to",
+            "type": "number"
+          },
+          {
+            "name": "value",
+            "description": "Metric value",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "path": "compression-benchmark.csv",
+      "description": "Per-image JPEG/WebP/AVIF encodes across a quality ladder with SSIM+PSNR vs the lossless master.",
+      "schema": {
+        "fields": [
+          {
+            "name": "image",
+            "description": "Source image identifier",
+            "type": "string"
+          },
+          {
+            "name": "width",
+            "description": "Image width in pixels",
+            "type": "number"
+          },
+          {
+            "name": "height",
+            "description": "Image height in pixels",
+            "type": "number"
+          },
+          {
+            "name": "pixels",
+            "description": "Total pixels (width×height)",
+            "type": "number"
+          },
+          {
+            "name": "format",
+            "description": "Codec/format of the encoded output",
+            "type": "string"
+          },
+          {
+            "name": "quality",
+            "description": "Encoder quality setting",
+            "type": "number"
+          },
+          {
+            "name": "bytes",
+            "description": "Encoded file size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "bpp",
+            "description": "Bits per pixel of the encoded output",
+            "type": "number"
+          },
+          {
+            "name": "ssim",
+            "description": "Structural similarity vs the lossless master (1.0 = identical)",
+            "type": "number"
+          },
+          {
+            "name": "psnr",
+            "description": "Peak signal-to-noise ratio in dB vs the master (higher = closer)",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "path": "heic-tax-benchmark.csv",
+      "description": "Per-image HEIC to JPG/PNG output sizes with SSIM vs the lossless master (the HEIC tax).",
+      "schema": {
+        "fields": [
+          {
+            "name": "image",
+            "description": "Source image identifier",
+            "type": "string"
+          },
+          {
+            "name": "pixels",
+            "description": "Total pixels (width×height)",
+            "type": "number"
+          },
+          {
+            "name": "heic_q",
+            "description": "iOS-like HEIC encode quality level",
+            "type": "number"
+          },
+          {
+            "name": "heic_bytes",
+            "description": "Size of the source HEIC file in bytes",
+            "type": "number"
+          },
+          {
+            "name": "heic_ssim",
+            "description": "SSIM of the HEIC vs the lossless master",
+            "type": "number"
+          },
+          {
+            "name": "png_bytes",
+            "description": "Size of the lossless PNG conversion in bytes",
+            "type": "number"
+          },
+          {
+            "name": "jpg_matched_bytes",
+            "description": "JPEG size at the quality matching the HEIC perceptually (bytes)",
+            "type": "number"
+          },
+          {
+            "name": "jpg80_bytes",
+            "description": "JPEG at quality 80: output size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "jpg80_ssim",
+            "description": "SSIM vs master for JPEG at quality 80",
+            "type": "number"
+          },
+          {
+            "name": "jpg85_bytes",
+            "description": "JPEG at quality 85: output size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "jpg85_ssim",
+            "description": "SSIM vs master for JPEG at quality 85",
+            "type": "number"
+          },
+          {
+            "name": "jpg90_bytes",
+            "description": "JPEG at quality 90: output size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "jpg90_ssim",
+            "description": "SSIM vs master for JPEG at quality 90",
+            "type": "number"
+          },
+          {
+            "name": "jpg93_bytes",
+            "description": "JPEG at quality 93: output size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "jpg93_ssim",
+            "description": "SSIM vs master for JPEG at quality 93",
+            "type": "number"
+          },
+          {
+            "name": "jpg95_bytes",
+            "description": "JPEG at quality 95: output size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "jpg95_ssim",
+            "description": "SSIM vs master for JPEG at quality 95",
+            "type": "number"
+          },
+          {
+            "name": "jpg97_bytes",
+            "description": "JPEG at quality 97: output size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "jpg97_ssim",
+            "description": "SSIM vs master for JPEG at quality 97",
+            "type": "number"
+          },
+          {
+            "name": "jpg98_bytes",
+            "description": "JPEG at quality 98: output size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "jpg98_ssim",
+            "description": "SSIM vs master for JPEG at quality 98",
+            "type": "number"
+          },
+          {
+            "name": "jpg100_bytes",
+            "description": "JPEG at quality 100: output size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "jpg100_ssim",
+            "description": "SSIM vs master for JPEG at quality 100",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "path": "heic-tax-summary.csv",
+      "description": "Median size multiplier of converting HEIC to JPG/PNG at matched perceptual quality.",
+      "schema": {
+        "fields": [
+          {
+            "name": "heic_q",
+            "description": "iOS-like HEIC encode quality level",
+            "type": "number"
+          },
+          {
+            "name": "mean_ssim",
+            "description": "Mean SSIM of the HEIC vs master across the corpus",
+            "type": "number"
+          },
+          {
+            "name": "corpus_heic_mb",
+            "description": "Total corpus size as HEIC (MB)",
+            "type": "number"
+          },
+          {
+            "name": "corpus_matched_jpg_mb",
+            "description": "Total corpus size as matched-quality JPEG (MB)",
+            "type": "number"
+          },
+          {
+            "name": "corpus_png_mb",
+            "description": "Total corpus size as PNG (MB)",
+            "type": "number"
+          },
+          {
+            "name": "jpg_tax_x_median",
+            "description": "Median size multiplier of HEIC→JPG",
+            "type": "number"
+          },
+          {
+            "name": "jpg_tax_pct",
+            "description": "Median percent size increase of HEIC→JPG",
+            "type": "number"
+          },
+          {
+            "name": "png_tax_x_median",
+            "description": "Median size multiplier of HEIC→PNG",
+            "type": "number"
+          },
+          {
+            "name": "png_tax_pct",
+            "description": "Median percent size increase of HEIC→PNG",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "path": "nextgen-formats-benchmark.csv",
+      "description": "JPEG/WebP/AVIF/JPEG XL sizes at matched SSIM, plus JXL lossless recompression of a JPEG.",
+      "schema": {
+        "fields": [
+          {
+            "name": "image",
+            "description": "Source image identifier",
+            "type": "string"
+          },
+          {
+            "name": "jpeg_ssim95_bytes",
+            "description": "JPEG size (bytes) at SSIM 0.95",
+            "type": "number"
+          },
+          {
+            "name": "webp_ssim95_bytes",
+            "description": "WEBP size (bytes) at SSIM 0.95",
+            "type": "number"
+          },
+          {
+            "name": "avif_ssim95_bytes",
+            "description": "AVIF size (bytes) at SSIM 0.95",
+            "type": "number"
+          },
+          {
+            "name": "jxl_ssim95_bytes",
+            "description": "JXL size (bytes) at SSIM 0.95",
+            "type": "number"
+          },
+          {
+            "name": "jpeg_ssim98_bytes",
+            "description": "JPEG size (bytes) at SSIM 0.98",
+            "type": "number"
+          },
+          {
+            "name": "webp_ssim98_bytes",
+            "description": "WEBP size (bytes) at SSIM 0.98",
+            "type": "number"
+          },
+          {
+            "name": "avif_ssim98_bytes",
+            "description": "AVIF size (bytes) at SSIM 0.98",
+            "type": "number"
+          },
+          {
+            "name": "jxl_ssim98_bytes",
+            "description": "JXL size (bytes) at SSIM 0.98",
+            "type": "number"
+          },
+          {
+            "name": "jpeg_q90_bytes",
+            "description": "JPEG at quality 90 output size (bytes)",
+            "type": "number"
+          },
+          {
+            "name": "jxl_lossless_bytes",
+            "description": "JPEG XL lossless recompression of the source JPEG (bytes)",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "path": "passport-photo-specs.csv",
+      "description": "Passport/visa photo specs (mm, head size, background, digital limits) by country.",
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "description": "Country name",
+            "type": "string"
+          },
+          {
+            "name": "document",
+            "description": "Document type (passport/visa)",
+            "type": "string"
+          },
+          {
+            "name": "width_mm",
+            "description": "Photo width in mm",
+            "type": "number"
+          },
+          {
+            "name": "height_mm",
+            "description": "Photo height in mm",
+            "type": "number"
+          },
+          {
+            "name": "size_inches",
+            "description": "Photo size in inches",
+            "type": "string"
+          },
+          {
+            "name": "head_min_mm",
+            "description": "Minimum head height in mm",
+            "type": "number"
+          },
+          {
+            "name": "head_max_mm",
+            "description": "Maximum head height in mm",
+            "type": "number"
+          },
+          {
+            "name": "head_measure",
+            "description": "How head size is measured",
+            "type": "string"
+          },
+          {
+            "name": "background",
+            "description": "Required background",
+            "type": "string"
+          },
+          {
+            "name": "glasses",
+            "description": "Glasses policy",
+            "type": "string"
+          },
+          {
+            "name": "neutral_expression",
+            "description": "Neutral expression required",
+            "type": "string"
+          },
+          {
+            "name": "recency_months",
+            "description": "Max photo age in months",
+            "type": "number"
+          },
+          {
+            "name": "digital_notes",
+            "description": "Digital submission limits",
+            "type": "string"
+          },
+          {
+            "name": "us_monthly_searches",
+            "description": "US monthly search volume for this spec",
+            "type": "number"
+          },
+          {
+            "name": "official_source",
+            "description": "Official government source",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "photo-storage-capacity.csv",
+      "description": "How many HEIC/JPEG/48MP/ProRAW photos fit in each iPhone storage tier.",
+      "schema": {
+        "fields": [
+          {
+            "name": "kind",
+            "description": "Content kind (photos/video)",
+            "type": "string"
+          },
+          {
+            "name": "item",
+            "description": "Item type (e.g. HEIC 12 MP)",
+            "type": "string"
+          },
+          {
+            "name": "item_size_mb",
+            "description": "Approx size per item in MB",
+            "type": "number"
+          },
+          {
+            "name": "tier_advertised_gb",
+            "description": "Advertised storage tier in GB",
+            "type": "number"
+          },
+          {
+            "name": "tier_usable_gb",
+            "description": "Usable storage after system in GB",
+            "type": "number"
+          },
+          {
+            "name": "capacity",
+            "description": "Number of items that fit",
+            "type": "number"
+          },
+          {
+            "name": "unit",
+            "description": "Unit of the capacity value",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "storage-trends-by-country.csv",
+      "description": "Storage-cleanup search demand pivoted by country and query.",
+      "schema": {
+        "fields": [
+          {
+            "name": "country_code",
+            "description": "ISO country code",
+            "type": "string"
+          },
+          {
+            "name": "country",
+            "description": "Country name",
+            "type": "string"
+          },
+          {
+            "name": "geo_id",
+            "description": "Geo identifier",
+            "type": "number"
+          },
+          {
+            "name": "topic_total_monthly",
+            "description": "Total monthly searches for the topic",
+            "type": "number"
+          },
+          {
+            "name": "free up iphone storage",
+            "description": "Monthly search volume for the query \"free up iphone storage\"",
+            "type": "number"
+          },
+          {
+            "name": "iphone storage full",
+            "description": "Monthly search volume for the query \"iphone storage full\"",
+            "type": "number"
+          },
+          {
+            "name": "how to free up space on iphone",
+            "description": "Monthly search volume for the query \"how to free up space on iphone\"",
+            "type": "number"
+          },
+          {
+            "name": "iphone running out of storage",
+            "description": "Monthly search volume for the query \"iphone running out of storage\"",
+            "type": "number"
+          },
+          {
+            "name": "clear storage iphone",
+            "description": "Monthly search volume for the query \"clear storage iphone\"",
+            "type": "number"
+          },
+          {
+            "name": "clear cache iphone",
+            "description": "Monthly search volume for the query \"clear cache iphone\"",
+            "type": "number"
+          },
+          {
+            "name": "other storage iphone",
+            "description": "Monthly search volume for the query \"other storage iphone\"",
+            "type": "number"
+          },
+          {
+            "name": "system data iphone",
+            "description": "Monthly search volume for the query \"system data iphone\"",
+            "type": "number"
+          },
+          {
+            "name": "delete duplicate photos",
+            "description": "Monthly search volume for the query \"delete duplicate photos\"",
+            "type": "number"
+          },
+          {
+            "name": "delete duplicate photos iphone",
+            "description": "Monthly search volume for the query \"delete duplicate photos iphone\"",
+            "type": "number"
+          },
+          {
+            "name": "phone storage full",
+            "description": "Monthly search volume for the query \"phone storage full\"",
+            "type": "number"
+          },
+          {
+            "name": "free up space on phone",
+            "description": "Monthly search volume for the query \"free up space on phone\"",
+            "type": "number"
+          },
+          {
+            "name": "clean up storage",
+            "description": "Monthly search volume for the query \"clean up storage\"",
+            "type": "number"
+          },
+          {
+            "name": "best phone cleaner app",
+            "description": "Monthly search volume for the query \"best phone cleaner app\"",
+            "type": "number"
+          },
+          {
+            "name": "find duplicate files",
+            "description": "Monthly search volume for the query \"find duplicate files\"",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "path": "storage-trends-long.csv",
+      "description": "Search demand for storage-cleanup queries by country (avg monthly + competition).",
+      "schema": {
+        "fields": [
+          {
+            "name": "country_code",
+            "description": "ISO country code",
+            "type": "string"
+          },
+          {
+            "name": "country",
+            "description": "Country name",
+            "type": "string"
+          },
+          {
+            "name": "query",
+            "description": "Search query",
+            "type": "string"
+          },
+          {
+            "name": "avg_monthly_searches",
+            "description": "Average monthly search volume",
+            "type": "number"
+          },
+          {
+            "name": "competition",
+            "description": "Advertiser competition level",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "storage-trends-monthly.csv",
+      "description": "Monthly search volume for storage-cleanup queries by country.",
+      "schema": {
+        "fields": [
+          {
+            "name": "country_code",
+            "description": "ISO country code",
+            "type": "string"
+          },
+          {
+            "name": "query",
+            "description": "Search query",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "description": "Year",
+            "type": "number"
+          },
+          {
+            "name": "month",
+            "description": "Month",
+            "type": "string"
+          },
+          {
+            "name": "searches",
+            "description": "Search volume",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "path": "streaming-data-usage.csv",
+      "description": "Data usage in MB/hour by streaming service and quality tier (official + measured).",
+      "schema": {
+        "fields": [
+          {
+            "name": "category",
+            "description": "Media category (video/audio)",
+            "type": "string"
+          },
+          {
+            "name": "service",
+            "description": "Streaming service",
+            "type": "string"
+          },
+          {
+            "name": "tier",
+            "description": "Quality tier",
+            "type": "string"
+          },
+          {
+            "name": "per_hour_mb",
+            "description": "Data per hour in MB",
+            "type": "number"
+          },
+          {
+            "name": "per_hour_gb",
+            "description": "Data per hour in GB",
+            "type": "number"
+          },
+          {
+            "name": "status",
+            "description": "Source of the figure (official/measured/estimate)",
+            "type": "string"
+          }
+        ]
+      }
+    }
   ]
 }
