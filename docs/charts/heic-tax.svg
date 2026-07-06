@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 310" width="760" height="310" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <rect x="1" y="1" width="758" height="308" rx="16" fill="#ffffff" stroke="#e6e8f0"/>
+  <text x="32" y="40" font-size="21" font-weight="800" fill="#1a1c28">The HEIC-to-JPG tax</text>
+  <text x="32" y="66" font-size="14" fill="#5b6172">Same photo corpus at matched quality (SSIM 0.9781), lower is better</text>
+  
+      <text x="32" y="110" font-size="15" font-weight="600" fill="#1a1c28">HEIC</text>
+      <rect x="164" y="92" width="446" height="26" rx="6" fill="#f1f2f7"/>
+      <rect x="164" y="92" width="80.0" height="26" rx="6" fill="#94a3b8"/>
+      <text x="254.04868828910563" y="110" font-size="15" font-weight="700" fill="#1a1c28">2.374 MB</text>
+      <text x="254.04868828910563" y="127" font-size="12" fill="#5b6172">original</text>
+      <text x="32" y="164" font-size="15" font-weight="600" fill="#1a1c28">JPG</text>
+      <rect x="164" y="146" width="446" height="26" rx="6" fill="#f1f2f7"/>
+      <rect x="164" y="146" width="193.3" height="26" rx="6" fill="#f59e0b"/>
+      <text x="367.27678233915475" y="164" font-size="15" font-weight="700" fill="#1a1c28">5.732 MB</text>
+      <text x="367.27678233915475" y="181" font-size="12" fill="#5b6172">2.51x bigger (+141.5%)</text>
+      <text x="32" y="218" font-size="15" font-weight="600" fill="#1a1c28">PNG</text>
+      <rect x="164" y="200" width="446" height="26" rx="6" fill="#f1f2f7"/>
+      <rect x="164" y="200" width="446.0" height="26" rx="6" fill="#ef4444"/>
+      <text x="620" y="218" font-size="15" font-weight="700" fill="#1a1c28">13.227 MB</text>
+      <text x="620" y="235" font-size="12" fill="#5b6172">5.50x bigger (+457.2%)</text>
+  <text x="32" y="290" font-size="12" fill="#5b6172">Storage Lab · corpus total · cleanor.app/research</text>
+</svg>

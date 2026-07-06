@@ -10,6 +10,14 @@ Reproducible benchmarks and open datasets on **image compression (JPEG / WebP / 
 
 Maintained by [Cleanor Labs](https://cleanor.app/research). If a study is useful, please [cite it](#citation) — that is the whole point of publishing the raw data.
 
+## Two numbers worth the repo
+
+<img src="docs/charts/compression-savings.svg" alt="At identical perceptual quality (SSIM 0.95), AVIF is ~41% smaller than JPEG and WebP ~13% smaller" width="720">
+
+<img src="docs/charts/heic-tax.svg" alt="Converting a HEIC photo corpus to JPG at matched quality makes it 2.5x bigger; to PNG, 5.5x bigger" width="720">
+
+<sub>Charts generated from the CSVs by [`benchmarks/render-charts.mjs`](benchmarks/render-charts.mjs). Full methodology and interactive versions at [cleanor.app/research](https://cleanor.app/research).</sub>
+
 ## Contents
 
 - [Why this exists](#why-this-exists)

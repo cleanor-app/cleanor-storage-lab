@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 310" width="760" height="310" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <rect x="1" y="1" width="758" height="308" rx="16" fill="#ffffff" stroke="#e6e8f0"/>
+  <text x="32" y="40" font-size="21" font-weight="800" fill="#1a1c28">Same quality, far fewer bytes</text>
+  <text x="32" y="66" font-size="14" fill="#5b6172">Mean encoded size to reach identical perceptual quality (SSIM 0.95), lower is better</text>
+  
+      <text x="32" y="110" font-size="15" font-weight="600" fill="#1a1c28">JPEG</text>
+      <rect x="164" y="92" width="446" height="26" rx="6" fill="#f1f2f7"/>
+      <rect x="164" y="92" width="446.0" height="26" rx="6" fill="#94a3b8"/>
+      <text x="620" y="110" font-size="15" font-weight="700" fill="#1a1c28">1.03 MB</text>
+      <text x="620" y="127" font-size="12" fill="#5b6172">baseline</text>
+      <text x="32" y="164" font-size="15" font-weight="600" fill="#1a1c28">WebP</text>
+      <rect x="164" y="146" width="446" height="26" rx="6" fill="#f1f2f7"/>
+      <rect x="164" y="146" width="388.4" height="26" rx="6" fill="#60a5fa"/>
+      <text x="562.3648896982088" y="164" font-size="15" font-weight="700" fill="#1a1c28">0.90 MB</text>
+      <text x="562.3648896982088" y="181" font-size="12" fill="#5b6172">13% smaller than JPEG</text>
+      <text x="32" y="218" font-size="15" font-weight="600" fill="#1a1c28">AVIF</text>
+      <rect x="164" y="200" width="446" height="26" rx="6" fill="#f1f2f7"/>
+      <rect x="164" y="200" width="265.0" height="26" rx="6" fill="#4a4efb"/>
+      <text x="439.013275547149" y="218" font-size="15" font-weight="700" fill="#1a1c28">0.61 MB</text>
+      <text x="439.013275547149" y="235" font-size="12" fill="#5b6172">41% smaller than JPEG</text>
+  <text x="32" y="290" font-size="12" fill="#5b6172">Storage Lab · corpus mean · cleanor.app/research</text>
+</svg>
