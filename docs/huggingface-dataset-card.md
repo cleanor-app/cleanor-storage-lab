@@ -38,6 +38,8 @@ configs:
     data_files: video-codec-benchmark.csv
   - config_name: video-codec-summary
     data_files: video-codec-summary.csv
+  - config_name: app-size-index
+    data_files: app-size-index.csv
 ---
 
 # Cleanor Storage Lab

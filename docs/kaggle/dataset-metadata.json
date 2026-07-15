@@ -2,7 +2,7 @@
   "id": "cleanorlabs/image-conversions-tax",
   "title": "Image Compression Benchmarks: JPEG/WebP/AVIF/HEIC",
   "subtitle": "Reproducible JPEG/WebP/AVIF/JXL, HEIC-tax & cloud $/GB benchmarks, SSIM-scored",
-  "description": "Reproducible, original benchmarks on image compression and digital storage — with the harness that produced them, so every number can be verified or re-run on your own images.\n\n![JPEG vs WebP vs AVIF at matched quality](https://raw.githubusercontent.com/cleanor-app/cleanor-storage-lab/main/docs/charts/compression-savings.png)\n\n**What's inside**\n- **Image compression** (`compression-benchmark*.csv`): JPEG / WebP / AVIF across a full quality ladder, scored with SSIM + PSNR against the lossless master. At matched perceptual quality (SSIM 0.95), AVIF is ~41% smaller than JPEG; WebP is *larger than JPEG* above SSIM 0.98.\n- **Next-gen formats** (`nextgen-formats-benchmark.csv`): adds JPEG XL, including bit-exact lossless recompression of an existing JPEG (~20% smaller, reversible).\n- **The HEIC tax** (`heic-tax-*.csv`): converting iPhone HEIC to JPG inflates files 1.75×–4.65×, and to PNG 3.87×–13.6×, at matched quality — for no visual gain.\n\n![The HEIC tax](https://raw.githubusercontent.com/cleanor-app/cleanor-storage-lab/main/docs/charts/heic-tax.png)\n\n- **Cloud storage price index** (`cloud-price-index.csv`): $/GB/month and 10-year cost across Apple, Google, Microsoft, Dropbox, Amazon, Proton, Box, pCloud, Backblaze.\n- **Reference** (`streaming-data-usage.csv`, `photo-storage-capacity.csv`, `passport-photo-specs.csv`, `storage-trends-*.csv`).\n\n**License:** CC BY 4.0 (attribution to Cleanor Labs).\n**Methodology & code:** https://github.com/cleanor-app/cleanor-storage-lab\n**Citable version (DOI):** https://doi.org/10.5281/zenodo.21217372\n**Write-ups with charts:** https://cleanor.app/research",
+  "description": "Reproducible, original benchmarks on image compression and digital storage \u2014 with the harness that produced them, so every number can be verified or re-run on your own images.\n\n![JPEG vs WebP vs AVIF at matched quality](https://raw.githubusercontent.com/cleanor-app/cleanor-storage-lab/main/docs/charts/compression-savings.png)\n\n**What's inside**\n- **Image compression** (`compression-benchmark*.csv`): JPEG / WebP / AVIF across a full quality ladder, scored with SSIM + PSNR against the lossless master. At matched perceptual quality (SSIM 0.95), AVIF is ~41% smaller than JPEG; WebP is *larger than JPEG* above SSIM 0.98.\n- **Next-gen formats** (`nextgen-formats-benchmark.csv`): adds JPEG XL, including bit-exact lossless recompression of an existing JPEG (~20% smaller, reversible).\n- **The HEIC tax** (`heic-tax-*.csv`): converting iPhone HEIC to JPG inflates files 1.75\u00d7\u20134.65\u00d7, and to PNG 3.87\u00d7\u201313.6\u00d7, at matched quality \u2014 for no visual gain.\n\n![The HEIC tax](https://raw.githubusercontent.com/cleanor-app/cleanor-storage-lab/main/docs/charts/heic-tax.png)\n\n- **Cloud storage price index** (`cloud-price-index.csv`): $/GB/month and 10-year cost across Apple, Google, Microsoft, Dropbox, Amazon, Proton, Box, pCloud, Backblaze.\n- **Reference** (`streaming-data-usage.csv`, `photo-storage-capacity.csv`, `passport-photo-specs.csv`, `storage-trends-*.csv`).\n\n**License:** CC BY 4.0 (attribution to Cleanor Labs).\n**Methodology & code:** https://github.com/cleanor-app/cleanor-storage-lab\n**Citable version (DOI):** https://doi.org/10.5281/zenodo.21217372\n**Write-ups with charts:** https://cleanor.app/research",
   "licenses": [
     {
       "name": "CC BY 4.0"
@@ -86,7 +86,7 @@
           },
           {
             "name": "pixels",
-            "description": "Total pixels (width×height)",
+            "description": "Total pixels (width\u00d7height)",
             "type": "number"
           },
           {
@@ -172,7 +172,7 @@
           },
           {
             "name": "pixels",
-            "description": "Total pixels (width×height)",
+            "description": "Total pixels (width\u00d7height)",
             "type": "number"
           },
           {
@@ -220,7 +220,7 @@
           },
           {
             "name": "pixels",
-            "description": "Total pixels (width×height)",
+            "description": "Total pixels (width\u00d7height)",
             "type": "number"
           },
           {
@@ -363,22 +363,22 @@
           },
           {
             "name": "jpg_tax_x_median",
-            "description": "Median size multiplier of HEIC→JPG",
+            "description": "Median size multiplier of HEIC\u2192JPG",
             "type": "number"
           },
           {
             "name": "jpg_tax_pct",
-            "description": "Median percent size increase of HEIC→JPG",
+            "description": "Median percent size increase of HEIC\u2192JPG",
             "type": "number"
           },
           {
             "name": "png_tax_x_median",
-            "description": "Median size multiplier of HEIC→PNG",
+            "description": "Median size multiplier of HEIC\u2192PNG",
             "type": "number"
           },
           {
             "name": "png_tax_pct",
-            "description": "Median percent size increase of HEIC→PNG",
+            "description": "Median percent size increase of HEIC\u2192PNG",
             "type": "number"
           }
         ]
@@ -776,6 +776,92 @@
             "name": "status",
             "description": "Source of the figure (official/measured/estimate)",
             "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "app-size-index.csv",
+      "description": "App Store download size (MB) for 40 popular iOS apps, date-stamped.",
+      "schema": {
+        "fields": [
+          {
+            "name": "app",
+            "description": "App name",
+            "type": "string"
+          },
+          {
+            "name": "category",
+            "description": "App Store category",
+            "type": "string"
+          },
+          {
+            "name": "app_store_id",
+            "description": "App Store track id",
+            "type": "number"
+          },
+          {
+            "name": "size_mb",
+            "description": "Download size in MB",
+            "type": "number"
+          },
+          {
+            "name": "version",
+            "description": "App version measured",
+            "type": "string"
+          },
+          {
+            "name": "min_ios",
+            "description": "Minimum iOS version",
+            "type": "string"
+          },
+          {
+            "name": "last_updated",
+            "description": "App's last update date",
+            "type": "string"
+          },
+          {
+            "name": "price_usd",
+            "description": "Price in USD (0 = free)",
+            "type": "number"
+          },
+          {
+            "name": "measured_date",
+            "description": "Date the size was measured",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "video-codec-summary.csv",
+      "description": "Bitrate each codec needs at matched SSIM (Xvid/H264/HEVC/VP9/AV1).",
+      "schema": {
+        "fields": [
+          {
+            "name": "clip",
+            "description": "Source clip",
+            "type": "string"
+          },
+          {
+            "name": "codec",
+            "description": "Codec key",
+            "type": "string"
+          },
+          {
+            "name": "codec_label",
+            "description": "Codec label",
+            "type": "string"
+          },
+          {
+            "name": "target_ssim",
+            "description": "Target SSIM",
+            "type": "number"
+          },
+          {
+            "name": "kbps",
+            "description": "Bitrate at that SSIM",
+            "type": "number"
           }
         ]
       }
