@@ -10,3 +10,5 @@ corpus-video/
 .work-fonts/
 corpus-img/
 corpus-fonts/
+corpus-svg/
+node_modules/

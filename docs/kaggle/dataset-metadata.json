@@ -984,6 +984,49 @@
           }
         ]
       }
+    },
+    {
+      "path": "svg-minify.csv",
+      "description": "SVGO minification + gzip savings across clean icons and detailed emoji SVGs.",
+      "schema": {
+        "fields": [
+          {
+            "name": "file",
+            "description": "SVG file",
+            "type": "string"
+          },
+          {
+            "name": "category",
+            "description": "icon (clean) / emoji (detailed)",
+            "type": "string"
+          },
+          {
+            "name": "original_bytes",
+            "description": "Original size",
+            "type": "number"
+          },
+          {
+            "name": "minified_bytes",
+            "description": "SVGO-minified size",
+            "type": "number"
+          },
+          {
+            "name": "minified_gzip_bytes",
+            "description": "Minified then gzipped size",
+            "type": "number"
+          },
+          {
+            "name": "minify_pct_saved",
+            "description": "Percent saved by SVGO",
+            "type": "number"
+          },
+          {
+            "name": "gzip_pct_of_original",
+            "description": "Minified+gzip size as percent of original",
+            "type": "number"
+          }
+        ]
+      }
     }
   ]
 }

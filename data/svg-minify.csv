@@ -1,0 +1,22 @@
+file,category,original_bytes,minified_bytes,minified_gzip_bytes,minify_pct_saved,gzip_pct_of_original
+openmoji-1F30D.svg,emoji (detailed),3990,2783,840,30.3,21.1
+openmoji-1F4A1.svg,emoji (detailed),2016,1225,652,39.2,32.3
+openmoji-1F680.svg,emoji (detailed),4498,3118,1139,30.7,25.3
+openmoji-1F984.svg,emoji (detailed),3258,2166,967,33.5,29.7
+si-docker.svg,icon (clean),1765,1772,579,-0.4,32.8
+si-figma.svg,icon (clean),1093,1050,407,3.9,37.2
+si-github.svg,icon (clean),822,811,449,1.3,54.6
+si-google.svg,icon (clean),457,440,295,3.7,64.6
+si-nodedotjs.svg,icon (clean),1608,1329,676,17.4,42.0
+si-notion.svg,icon (clean),978,966,547,1.2,55.9
+si-python.svg,icon (clean),1518,1503,717,1.0,47.2
+si-react.svg,icon (clean),2926,2661,1277,9.1,43.6
+si-vuedotjs.svg,icon (clean),202,191,169,5.4,83.7
+twemoji-1f333.svg,emoji (detailed),862,840,300,2.6,34.8
+twemoji-1f389.svg,emoji (detailed),3153,2844,1169,9.8,37.1
+twemoji-1f44d.svg,emoji (detailed),1663,1386,613,16.7,36.9
+twemoji-1f4a9.svg,emoji (detailed),1194,1168,581,2.2,48.7
+twemoji-1f60d.svg,emoji (detailed),941,852,433,9.5,46.0
+twemoji-1f680.svg,emoji (detailed),677,625,361,7.7,53.3
+twemoji-1f981.svg,emoji (detailed),2913,2669,1134,8.4,38.9
+twemoji-2764.svg,emoji (detailed),368,367,257,0.3,69.8

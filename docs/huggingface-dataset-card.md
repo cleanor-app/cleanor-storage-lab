@@ -46,6 +46,8 @@ configs:
     data_files: lossless-recompression.csv
   - config_name: font-format-weight
     data_files: font-format-weight.csv
+  - config_name: svg-minify
+    data_files: svg-minify.csv
 ---
 
 # Cleanor Storage Lab
