@@ -49,6 +49,7 @@ Every figure below names the data file it came from. All image comparisons are a
 | [`docs/lossless-recompression.md`](docs/lossless-recompression.md) | How much smaller can a PNG/JPEG get with no quality loss? (~10% / ~6%) |
 | [`docs/font-format-weight.md`](docs/font-format-weight.md) | WOFF2 vs WOFF vs TTF, and subsetting (down to ~11%) |
 | [`docs/svg-minify.md`](docs/svg-minify.md) | How much does SVGO shrink an SVG? (5-16%, gzip does more) |
+| [`docs/measuring-device-cache.md`](docs/measuring-device-cache.md) | What is eating my storage? (method only — no personal data published) |
 | [`docs/methodology.md`](docs/methodology.md) | Corpus, encoders, the SSIM metric, and the honest caveats |
 | [`docs/preprints/heic-conversion-file-size-tax.md`](docs/preprints/heic-conversion-file-size-tax.md) | The HEIC-tax study as a citable manuscript ([PDF](docs/preprints/heic-conversion-file-size-tax.pdf)) |
 | [`docs/huggingface-dataset-card.md`](docs/huggingface-dataset-card.md) | The dataset card published to Hugging Face |
