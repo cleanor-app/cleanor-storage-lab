@@ -34,6 +34,10 @@ configs:
     data_files: cloud-price-index.csv
   - config_name: photo-storage-capacity
     data_files: photo-storage-capacity.csv
+  - config_name: video-codec-benchmark
+    data_files: video-codec-benchmark.csv
+  - config_name: video-codec-summary
+    data_files: video-codec-summary.csv
 ---
 
 # Cleanor Storage Lab

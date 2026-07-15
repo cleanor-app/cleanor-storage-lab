@@ -3,3 +3,5 @@ corpus/
 .work/
 *.log
 .DS_Store
+corpus-video/
+.work-video/
