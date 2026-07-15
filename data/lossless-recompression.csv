@@ -1,0 +1,19 @@
+file,format,method,original_bytes,recompressed_bytes,pct_saved
+img1.jpg,jpeg,jpegtran -optimize,131804,130099,1.3
+img1.jpg,jpeg,jpegtran -progressive,131804,122580,7.0
+img1.png,png,oxipng -o max --strip safe,703812,664625,5.6
+img2.jpg,jpeg,jpegtran -optimize,131588,129896,1.3
+img2.jpg,jpeg,jpegtran -progressive,131588,122392,7.0
+img2.png,png,oxipng -o max --strip safe,702708,669357,4.7
+img3.jpg,jpeg,jpegtran -optimize,59746,58703,1.7
+img3.jpg,jpeg,jpegtran -progressive,59746,56858,4.8
+img3.png,png,oxipng -o max --strip safe,382821,348176,9.0
+img4.jpg,jpeg,jpegtran -optimize,62404,61337,1.7
+img4.jpg,jpeg,jpegtran -progressive,62404,59300,5.0
+img4.png,png,oxipng -o max --strip safe,398965,365197,8.5
+img5.jpg,jpeg,jpegtran -optimize,36420,34729,4.6
+img5.jpg,jpeg,jpegtran -progressive,36420,34041,6.5
+img5.png,png,oxipng -o max --strip safe,200480,169609,15.4
+img6.jpg,jpeg,jpegtran -optimize,28535,26509,7.1
+img6.jpg,jpeg,jpegtran -progressive,28535,26215,8.1
+img6.png,png,oxipng -o max --strip safe,158462,127568,19.5

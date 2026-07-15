@@ -913,6 +913,77 @@
           }
         ]
       }
+    },
+    {
+      "path": "lossless-recompression.csv",
+      "description": "Lossless PNG/JPEG recompression savings (oxipng, jpegtran).",
+      "schema": {
+        "fields": [
+          {
+            "name": "file",
+            "description": "Source file",
+            "type": "string"
+          },
+          {
+            "name": "format",
+            "description": "png/jpeg",
+            "type": "string"
+          },
+          {
+            "name": "method",
+            "description": "Tool + flags",
+            "type": "string"
+          },
+          {
+            "name": "original_bytes",
+            "description": "Original size",
+            "type": "number"
+          },
+          {
+            "name": "recompressed_bytes",
+            "description": "Recompressed size",
+            "type": "number"
+          },
+          {
+            "name": "pct_saved",
+            "description": "Percent saved (lossless)",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "path": "font-format-weight.csv",
+      "description": "Font size as TTF/WOFF/WOFF2/Latin-subset.",
+      "schema": {
+        "fields": [
+          {
+            "name": "font",
+            "description": "Font family",
+            "type": "string"
+          },
+          {
+            "name": "variant",
+            "description": "ttf/woff/woff2/woff2-latin-subset",
+            "type": "string"
+          },
+          {
+            "name": "bytes",
+            "description": "Size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "kb",
+            "description": "Size in KB",
+            "type": "number"
+          },
+          {
+            "name": "pct_of_ttf",
+            "description": "Size as percent of the TTF",
+            "type": "number"
+          }
+        ]
+      }
     }
   ]
 }

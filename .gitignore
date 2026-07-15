@@ -6,3 +6,7 @@ corpus/
 corpus-video/
 .work-video/
 .work-gif/
+.work-lossless/
+.work-fonts/
+corpus-img/
+corpus-fonts/

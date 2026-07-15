@@ -42,6 +42,10 @@ configs:
     data_files: app-size-index.csv
   - config_name: gif-format-benchmark
     data_files: gif-format-benchmark.csv
+  - config_name: lossless-recompression
+    data_files: lossless-recompression.csv
+  - config_name: font-format-weight
+    data_files: font-format-weight.csv
 ---
 
 # Cleanor Storage Lab
