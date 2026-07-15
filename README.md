@@ -30,6 +30,7 @@ Every figure below names the data file it came from. All image comparisons are a
 - **SVGO shrinks an already-clean icon ~5% and a detailed emoji ~16%; gzip is the bigger win, ~40-50% of the original.** Raw design-tool exports save far more. Source: [`data/svg-minify.csv`](data/svg-minify.csv).
 - **A web font is ~40% of its TTF size as WOFF2, and ~11% subset to Latin** (an ~88% saving), losslessly. Source: [`data/font-format-weight.csv`](data/font-format-weight.csv).
 - **A 3-second GIF is 44x to 91x bigger than the same clip as an MP4** (8-11 MB vs ~100-250 KB), and lower quality (256 colours). GIF has no interframe compression, so it pays full price for parts of the frame that never move. Source: [`data/gif-format-benchmark.csv`](data/gif-format-benchmark.csv).
+- **The storage upgrade "tax": Apple charges ~$0.78/GB to add storage (13x the ~$0.06/GB flash costs)**, $0.29-0.78/GB across tiers (5-13x). US list, date-stamped. Source: [`data/storage-upgrade-tax.csv`](data/storage-upgrade-tax.csv).
 - **The median popular iOS app is ~400 MB to download, and 9 of 40 exceed 500 MB** — TikTok 936 MB, Gmail 775 MB, and payment apps Venmo (676 MB) and PayPal (525 MB) outweigh Netflix, all before a single cache. Measured from the App Store, date-stamped. Source: [`data/app-size-index.csv`](data/app-size-index.csv).
 
 <img src="docs/charts/compression-savings.svg" alt="At identical perceptual quality (SSIM 0.95), AVIF is 41% smaller than JPEG and WebP 13% smaller" width="720">
@@ -46,6 +47,7 @@ Every figure below names the data file it came from. All image comparisons are a
 | [`docs/webp-vs-avif-vs-jpeg-xl.md`](docs/webp-vs-avif-vs-jpeg-xl.md) | WebP vs AVIF vs JPEG XL: which format is actually smallest at equal SSIM? |
 | [`docs/video-codec-size-benchmark.md`](docs/video-codec-size-benchmark.md) | How much smaller is H.265 / AV1 than Xvid/DivX at the same quality? (4x to 8.9x, with the per-clip table) |
 | [`docs/app-size-index.md`](docs/app-size-index.md) | How big are the apps on your phone? Measured App Store download sizes (TikTok 936 MB) |
+| [`docs/storage-upgrade-tax.md`](docs/storage-upgrade-tax.md) | What makers charge to add storage vs what flash costs (5-13x markup) |
 | [`docs/gif-vs-mp4-size.md`](docs/gif-vs-mp4-size.md) | Why is my GIF so big? GIF vs MP4/WebM (44x to 91x) |
 | [`docs/lossless-recompression.md`](docs/lossless-recompression.md) | How much smaller can a PNG/JPEG get with no quality loss? (~10% / ~6%) |
 | [`docs/font-format-weight.md`](docs/font-format-weight.md) | WOFF2 vs WOFF vs TTF, and subsetting (down to ~11%) |

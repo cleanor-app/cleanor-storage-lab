@@ -1080,6 +1080,69 @@
           }
         ]
       }
+    },
+    {
+      "path": "storage-upgrade-tax.csv",
+      "description": "Device storage-upgrade upcharge per GB vs flash cost (markup), US list prices, date-stamped.",
+      "schema": {
+        "fields": [
+          {
+            "name": "device",
+            "description": "Device model",
+            "type": "string"
+          },
+          {
+            "name": "category",
+            "description": "phone/tablet/laptop/desktop",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "description": "Model year",
+            "type": "number"
+          },
+          {
+            "name": "from_gb",
+            "description": "Lower tier GB",
+            "type": "number"
+          },
+          {
+            "name": "to_gb",
+            "description": "Upgraded tier GB",
+            "type": "number"
+          },
+          {
+            "name": "extra_gb",
+            "description": "Added GB",
+            "type": "number"
+          },
+          {
+            "name": "upcharge_usd",
+            "description": "Price of the upgrade in USD",
+            "type": "number"
+          },
+          {
+            "name": "upcharge_per_gb",
+            "description": "USD per added GB",
+            "type": "number"
+          },
+          {
+            "name": "flash_ref_per_gb",
+            "description": "Reference flash cost per GB (USD)",
+            "type": "number"
+          },
+          {
+            "name": "markup_vs_flash_x",
+            "description": "Upcharge/GB over flash reference",
+            "type": "number"
+          },
+          {
+            "name": "measured_date",
+            "description": "Month prices were recorded",
+            "type": "string"
+          }
+        ]
+      }
     }
   ]
 }
