@@ -865,6 +865,54 @@
           }
         ]
       }
+    },
+    {
+      "path": "gif-format-benchmark.csv",
+      "description": "Same clip as GIF/APNG/MP4/WebM at 480p/15fps: bytes and size ratio vs GIF.",
+      "schema": {
+        "fields": [
+          {
+            "name": "clip",
+            "description": "Source clip",
+            "type": "string"
+          },
+          {
+            "name": "format",
+            "description": "Output format",
+            "type": "string"
+          },
+          {
+            "name": "bytes",
+            "description": "Encoded size in bytes",
+            "type": "number"
+          },
+          {
+            "name": "kb",
+            "description": "Encoded size in KB",
+            "type": "number"
+          },
+          {
+            "name": "vs_gif_ratio",
+            "description": "Size relative to the GIF (1.0 = same)",
+            "type": "number"
+          },
+          {
+            "name": "width",
+            "description": "Width in px",
+            "type": "number"
+          },
+          {
+            "name": "fps",
+            "description": "Frames per second",
+            "type": "number"
+          },
+          {
+            "name": "seconds",
+            "description": "Clip duration",
+            "type": "number"
+          }
+        ]
+      }
     }
   ]
 }

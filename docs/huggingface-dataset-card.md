@@ -40,6 +40,8 @@ configs:
     data_files: video-codec-summary.csv
   - config_name: app-size-index
     data_files: app-size-index.csv
+  - config_name: gif-format-benchmark
+    data_files: gif-format-benchmark.csv
 ---
 
 # Cleanor Storage Lab
