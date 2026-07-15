@@ -1,0 +1,25 @@
+pdf,pages,raster_images,original_kb,method,lossy,output_kb,pct_saved,text_word_overlap_pct
+arxiv-bert.pdf,16,76,757,gs /screen (72dpi),lossy,149,80.3,96.8
+arxiv-bert.pdf,16,76,757,gs /ebook (150dpi),lossy,149,80.3,96.8
+arxiv-bert.pdf,16,76,757,gs /printer (300dpi),lossy,157,79.2,96.8
+arxiv-bert.pdf,16,76,757,qpdf lossless,lossless,648,14.4,100.0
+arxiv-gan.pdf,9,6,518,gs /screen (72dpi),lossy,131,74.7,99.8
+arxiv-gan.pdf,9,6,518,gs /ebook (150dpi),lossy,141,72.7,99.8
+arxiv-gan.pdf,9,6,518,gs /printer (300dpi),lossy,166,67.9,99.8
+arxiv-gan.pdf,9,6,518,qpdf lossless,lossless,508,1.9,100.0
+arxiv-gpt3.pdf,75,166,6609,gs /screen (72dpi),lossy,893,86.5,100.0
+arxiv-gpt3.pdf,75,166,6609,gs /ebook (150dpi),lossy,1975,70.1,100.0
+arxiv-gpt3.pdf,75,166,6609,gs /printer (300dpi),lossy,5114,22.6,100.0
+arxiv-gpt3.pdf,75,166,6609,qpdf lossless,lossless,6430,2.7,100.0
+arxiv-resnet.pdf,12,0,800,gs /screen (72dpi),lossy,199,75.2,100.0
+arxiv-resnet.pdf,12,0,800,gs /ebook (150dpi),lossy,198,75.2,100.0
+arxiv-resnet.pdf,12,0,800,gs /printer (300dpi),lossy,755,5.7,100.0
+arxiv-resnet.pdf,12,0,800,qpdf lossless,lossless,700,12.5,100.0
+arxiv-transformer.pdf,15,6,2163,gs /screen (72dpi),lossy,171,92.1,95.2
+arxiv-transformer.pdf,15,6,2163,gs /ebook (150dpi),lossy,210,90.3,95.2
+arxiv-transformer.pdf,15,6,2163,gs /printer (300dpi),lossy,387,82.1,95.2
+arxiv-transformer.pdf,15,6,2163,qpdf lossless,lossless,1775,17.9,100.0
+arxiv-vgg.pdf,14,737,195,gs /screen (72dpi),lossy,130,33.3,100.0
+arxiv-vgg.pdf,14,737,195,gs /ebook (150dpi),lossy,130,33.3,100.0
+arxiv-vgg.pdf,14,737,195,gs /printer (300dpi),lossy,155,20.8,100.0
+arxiv-vgg.pdf,14,737,195,qpdf lossless,lossless,143,26.6,100.0

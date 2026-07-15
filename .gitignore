@@ -12,3 +12,5 @@ corpus-img/
 corpus-fonts/
 corpus-svg/
 node_modules/
+corpus-pdf/
+.work-pdf/

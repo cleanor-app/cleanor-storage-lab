@@ -26,6 +26,7 @@ Every figure below names the data file it came from. All image comparisons are a
 - **JPEG XL losslessly recompresses existing JPEGs by 8.3%** (2,258,640 to 2,071,974 bytes across 24 images, 6.1% to 10.6% each), bit-exact and fully reversible. Source: [`data/nextgen-formats-benchmark.csv`](data/nextgen-formats-benchmark.csv) (`jpeg_q90_bytes` vs `jxl_lossless_bytes`).
 - **The Xvid/DivX video codec needs ~4x the bitrate of H.264 and ~8.9x that of AV1 at the same quality** (SSIM 0.97, three 720p clips). Re-encoding a Xvid file to HEVC cuts it to **18%** of its size, and to AV1, **11%**. The gap is widest at streaming quality and narrows toward visually-lossless. Sources: [`data/video-codec-summary.csv`](data/video-codec-summary.csv), per-encode ladder in [`data/video-codec-benchmark.csv`](data/video-codec-benchmark.csv).
 - **A PNG recompresses ~10% smaller and a JPEG up to ~6% smaller with ZERO quality loss** (oxipng, jpegtran), just from better entropy coding and stripped metadata; verified bit-identical. Source: [`data/lossless-recompression.csv`](data/lossless-recompression.csv).
+- **Ghostscript `/ebook` shrinks a PDF ~70% (33-90% by image density) keeping 95-100% of the text; qpdf lossless saves ~13% with text byte-identical.** The big savings are lossy (image downsampling), the safe ones small. Source: [`data/pdf-compression.csv`](data/pdf-compression.csv).
 - **SVGO shrinks an already-clean icon ~5% and a detailed emoji ~16%; gzip is the bigger win, ~40-50% of the original.** Raw design-tool exports save far more. Source: [`data/svg-minify.csv`](data/svg-minify.csv).
 - **A web font is ~40% of its TTF size as WOFF2, and ~11% subset to Latin** (an ~88% saving), losslessly. Source: [`data/font-format-weight.csv`](data/font-format-weight.csv).
 - **A 3-second GIF is 44x to 91x bigger than the same clip as an MP4** (8-11 MB vs ~100-250 KB), and lower quality (256 colours). GIF has no interframe compression, so it pays full price for parts of the frame that never move. Source: [`data/gif-format-benchmark.csv`](data/gif-format-benchmark.csv).
@@ -49,6 +50,7 @@ Every figure below names the data file it came from. All image comparisons are a
 | [`docs/lossless-recompression.md`](docs/lossless-recompression.md) | How much smaller can a PNG/JPEG get with no quality loss? (~10% / ~6%) |
 | [`docs/font-format-weight.md`](docs/font-format-weight.md) | WOFF2 vs WOFF vs TTF, and subsetting (down to ~11%) |
 | [`docs/svg-minify.md`](docs/svg-minify.md) | How much does SVGO shrink an SVG? (5-16%, gzip does more) |
+| [`docs/pdf-compression.md`](docs/pdf-compression.md) | How much can you compress a PDF? Ghostscript vs qpdf (~70% lossy / ~13% lossless) |
 | [`docs/measuring-device-cache.md`](docs/measuring-device-cache.md) | What is eating my storage? (method only — no personal data published) |
 | [`docs/methodology.md`](docs/methodology.md) | Corpus, encoders, the SSIM metric, and the honest caveats |
 | [`docs/preprints/heic-conversion-file-size-tax.md`](docs/preprints/heic-conversion-file-size-tax.md) | The HEIC-tax study as a citable manuscript ([PDF](docs/preprints/heic-conversion-file-size-tax.pdf)) |

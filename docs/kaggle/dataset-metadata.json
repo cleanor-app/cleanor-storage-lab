@@ -1027,6 +1027,59 @@
           }
         ]
       }
+    },
+    {
+      "path": "pdf-compression.csv",
+      "description": "PDF size reduction: Ghostscript (lossy) vs qpdf (lossless), with text-preservation check.",
+      "schema": {
+        "fields": [
+          {
+            "name": "pdf",
+            "description": "Source PDF",
+            "type": "string"
+          },
+          {
+            "name": "pages",
+            "description": "Page count",
+            "type": "number"
+          },
+          {
+            "name": "raster_images",
+            "description": "Embedded raster image count",
+            "type": "number"
+          },
+          {
+            "name": "original_kb",
+            "description": "Original size KB",
+            "type": "number"
+          },
+          {
+            "name": "method",
+            "description": "Compression method + preset",
+            "type": "string"
+          },
+          {
+            "name": "lossy",
+            "description": "lossy or lossless",
+            "type": "string"
+          },
+          {
+            "name": "output_kb",
+            "description": "Output size KB",
+            "type": "number"
+          },
+          {
+            "name": "pct_saved",
+            "description": "Percent size saved",
+            "type": "number"
+          },
+          {
+            "name": "text_word_overlap_pct",
+            "description": "Word-multiset overlap of extracted text vs original (100 = identical)",
+            "type": "number"
+          }
+        ]
+      }
     }
   ]
 }

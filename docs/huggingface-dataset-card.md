@@ -48,6 +48,8 @@ configs:
     data_files: font-format-weight.csv
   - config_name: svg-minify
     data_files: svg-minify.csv
+  - config_name: pdf-compression
+    data_files: pdf-compression.csv
 ---
 
 # Cleanor Storage Lab
